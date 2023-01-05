@@ -4,6 +4,7 @@
   overflow: hidden;
   min-width: 240px;
   background: white;
+  border-bottom: 1px solid #aaa;
 }
 .rce-container-citem:hover {
   background: #f9f9f9;
@@ -18,6 +19,7 @@
   overflow: hidden;
   min-width: 240px;
   background: #eceff3;
+  border-bottom: 1px solid #aaa;
 }
 
 .rce-container-citem.rce-citem-status-encircle {
@@ -35,6 +37,7 @@
   max-width: 100%;
   overflow: hidden;
   min-width: 240px;
+  margin-bottom:-1px;
 }
 
 .rce-citem-active {
@@ -48,6 +51,7 @@
   max-width: 100%;
   overflow: hidden;
   min-width: 240px;
+  margin-bottom:-1px;
 }
 
 .rce-citem:hover {
