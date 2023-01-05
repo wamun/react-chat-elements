@@ -22,6 +22,19 @@
   min-width: 240px;
 }
 
+.rce-citem-active {
+  position: relative;
+  background: #eceff3;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  cursor: pointer;
+  user-select: none;
+  max-width: 100%;
+  overflow: hidden;
+  min-width: 240px;
+}
+
 .rce-citem:hover {
   background: #f9f9f9;
 }
@@ -34,6 +47,20 @@
   margin-top: 4px;
   position: relative;
   background: inherit;
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  cursor: pointer;
+  user-select: none;
+  max-width: 100%;
+  overflow: hidden;
+  min-width: 240px;
+}
+
+.rce-citem-low-active {
+  margin-top: 4px;
+  position: relative;
+  background: #eceff3;
   display: flex;
   flex-direction: row;
   height: 24px;
