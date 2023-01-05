@@ -55,7 +55,7 @@
     "css",
     "chat",
     "components",
-    "detaysoft"
+    "wamun"
   ],
   "license": "MIT",
   "jest": {
@@ -67,9 +67,9 @@
     "[module-name]": false
   },
   "bugs": {
-    "url": "https://github.com/detaysoft/react-chat-elements/issues"
+    "url": "https://github.com/wamun/react-chat-elements/issues"
   },
-  "homepage": "https://github.com/detaysoft/react-chat-elements#readme",
+  "homepage": "https://github.com/wamun/react-chat-elements#readme",
   "scripts": {
     "dev-server": "webpack-dev-server --config webpack.dev.config.js",
     "build": "yarn run clear:build && node node_modules/typescript/bin/tsc -p tsconfig.prod.json && yarn run copy-files",
