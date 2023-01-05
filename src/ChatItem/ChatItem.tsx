@@ -146,8 +146,8 @@ const ChatItem: React.FC<IChatItemProps> = ({
           {props.severity === 'Low' && <div className={`rce-citem-low-col rce-citem-low-col-low`}>{props.severity}</div>}
           {props.severity === 'Mid' && <div className={`rce-citem-low-col rce-citem-low-col-mid`}>{props.severity}</div>}
           {props.severity === 'Hi' && <div className={`rce-citem-low-col rce-citem-low-col-hi`}>{props.severity}</div>}
-          {props.status === 'debyoo_action_waited' && <div className={`rce-citem-low-col rce-citem-low-col-action-debyoo`}>{props.status}</div>}
-          {props.status === 'user_action_waited' && <div className={`rce-citem-low-col rce-citem-low-col-action-user`}>{props.status}</div>}
+          {(props.status === 'Debyoo' || props.status === 'debyoo_action_waited') && <div className={`rce-citem-low-col rce-citem-low-col-action-debyoo`}>{props.status}</div>}
+          {(props.status === 'User' || props.status === 'user_action_waited') && <div className={`rce-citem-low-col rce-citem-low-col-action-user`}>{props.status}</div>}
       </div>
     </div>
   )
