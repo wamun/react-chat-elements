@@ -59,7 +59,8 @@
 }
 
 .rce-citem-low {
-  margin-top: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   position: relative;
   background: inherit;
   display: flex;
@@ -73,7 +74,8 @@
 }
 
 .rce-citem-low-active {
-  margin-top: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   position: relative;
   background: #eceff3;
   display: flex;
