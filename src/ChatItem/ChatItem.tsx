@@ -68,7 +68,7 @@ const ChatItem: React.FC<IChatItemProps> = ({
       onClick={handleOnClick}
       onContextMenu={props.onContextMenu}
     >
-      <div className='rce-citem' onDragOver={onDragOver} onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDrop={onDrop}>
+      <div className={props.selected ? 'rce-citem-active':'rce-citem'} onDragOver={onDragOver} onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDrop={onDrop}>
         {!!props.onDragComponent && onDrag && props.onDragComponent(props.id)}
         {((onDrag && !props.onDragComponent) || !onDrag) && [
           <div
@@ -140,7 +140,7 @@ const ChatItem: React.FC<IChatItemProps> = ({
           </div>,
         ]}
       </div>
-      <div className='rce-citem-low'>
+      <div className={props.selected ? 'rce-citem-low-active':'rce-citem-low'}>
           <div className={`rce-citem-low-col rce-citem-low-col-type-default`}>{props.case_type}</div>
           <div className={`rce-citem-low-col rce-citem-low-col-categ-default`}>{props.category}</div>
           {props.severity === 'Low' && <div className={`rce-citem-low-col rce-citem-low-col-low`}>{props.severity}</div>}
