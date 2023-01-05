@@ -3,6 +3,21 @@
   display: block;
   overflow: hidden;
   min-width: 240px;
+  background: white;
+}
+.rce-container-citem:hover {
+  background: #f9f9f9;
+}
+.rce-container-citem:active {
+  background: #eceff3;
+}
+
+.rce-container-citem-active {
+  flex-direction: column;
+  display: block;
+  overflow: hidden;
+  min-width: 240px;
+  background: #eceff3;
 }
 
 .rce-container-citem.rce-citem-status-encircle {
