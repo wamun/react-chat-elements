@@ -5,6 +5,7 @@
   min-width: 240px;
   background: white;
   border-bottom: 1px solid #aaa;
+  padding-bottom: 3px;
 }
 .rce-container-citem:hover {
   background: #f9f9f9;
@@ -20,6 +21,7 @@
   min-width: 240px;
   background: #eceff3;
   border-bottom: 1px solid #aaa;
+  padding-bottom: 3px;
 }
 
 .rce-container-citem.rce-citem-status-encircle {
@@ -37,7 +39,6 @@
   max-width: 100%;
   overflow: hidden;
   min-width: 240px;
-  margin-bottom:-1px;
 }
 
 .rce-citem-active {
@@ -51,7 +52,6 @@
   max-width: 100%;
   overflow: hidden;
   min-width: 240px;
-  margin-bottom:-1px;
 }
 
 .rce-citem:hover {
@@ -70,7 +70,7 @@
   background: inherit;
   display: flex;
   flex-direction: row;
-  height: 34px;
+  height: 24px;
   cursor: pointer;
   user-select: none;
   max-width: 100%;
@@ -86,7 +86,7 @@
   background: inherit;
   display: flex;
   flex-direction: row;
-  height: 34px;
+  height: 24px;
   cursor: pointer;
   user-select: none;
   max-width: 100%;
