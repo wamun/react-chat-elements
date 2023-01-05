@@ -26,6 +26,72 @@
   background: #f9f9f9;
 }
 
+.rce-citem-low {
+  margin-top: 4px;
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  cursor: pointer;
+  user-select: none;
+  max-width: 100%;
+  overflow: hidden;
+  min-width: 240px;
+}
+
+.rce-citem-low-col {
+  padding: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.rce-citem-low-col-default {
+  background: #222733;
+  color: #fff
+}
+
+.rce-citem-low-col-type-default {
+  background: #222733;
+  color: #fff
+}
+
+.rce-citem-low-col-categ-default {
+  background: #9ea7b6;
+  color: #fff
+}
+
+.rce-citem-low-col-low {
+  background: #20af28;
+  color: #fff
+}
+
+.rce-citem-low-col-mid {
+  background: #e55501;
+  color: #fff
+}
+
+.rce-citem-low-col-hi {
+  background: red;
+  color: #fff
+}
+
+.rce-citem-low-col-action-debyoo {
+  background: red;
+  color: #fff
+}
+
+.rce-citem-low-col-action-user {
+  background: #1554d1;
+  color: #fff
+}
+
 .rce-citem-avatar {
   position: relative;
   padding: 0 15px 0 13px;
