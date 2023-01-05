@@ -64,7 +64,7 @@ const ChatItem: React.FC<IChatItemProps> = ({
   return (
     <div
       key={props.id as Key}
-      className={classNames('rce-container-citem', props.className)}
+      className={classNames(props.selected ? 'rce-container-citem-active':'rce-container-citem', props.className)}
       onClick={handleOnClick}
       onContextMenu={props.onContextMenu}
     >
