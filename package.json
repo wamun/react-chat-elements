@@ -46,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/detaysoft/react-chat-elements.git"
+    "url": "git+https://github.com/wamun/react-chat-elements.git"
   },
   "keywords": [
     "react",
