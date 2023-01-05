@@ -40,6 +40,10 @@
   min-width: 240px;
 }
 
+.rce-citem-low:hover {
+  background: #f9f9f9;
+}
+
 .rce-citem-low-col {
   padding: 4px;
   padding-left: 6px;
