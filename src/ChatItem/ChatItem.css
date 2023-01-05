@@ -29,7 +29,7 @@
 .rce-citem-low {
   margin-top: 4px;
   position: relative;
-  background: white;
+  background: inherit;
   display: flex;
   flex-direction: row;
   height: 24px;
