@@ -26,6 +26,10 @@
   background: #f9f9f9;
 }
 
+.rce-citem:active {
+  background: #eceff3;
+}
+
 .rce-citem-low {
   margin-top: 4px;
   position: relative;
@@ -42,6 +46,10 @@
 
 .rce-citem-low:hover {
   background: #f9f9f9;
+}
+
+.rce-citem-low:active {
+  background: #eceff3;
 }
 
 .rce-citem-low-col {
