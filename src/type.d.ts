@@ -8,6 +8,7 @@ import React from 'react'
  * @prop category The Chat Item's category and optional.
  * @prop severity The Chat Item's severity and optional.
  * @prop status The Chat Item's status and optional.
+ * @prop selected The Chat Item's selected and optional.
  * @prop unread The Chat Item's message unread and optional.
  * @prop className The Chat Item's component className and optional.
  * @prop avatarFlexible The Chat Item's avatar avatarFlexible and optional.
@@ -41,6 +42,7 @@ export interface IChatItemProps {
   category?: string
   severity?: string
   status?: string
+  selected?: string
   unread?: number
   className?: string
   avatarFlexible?: boolean
