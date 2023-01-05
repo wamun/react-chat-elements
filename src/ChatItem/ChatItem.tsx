@@ -108,7 +108,7 @@ const ChatItem: React.FC<IChatItemProps> = ({
           </div>,
           <div key={'rce-citem-body'} className='rce-citem-body'>
             <div className='rce-citem-body--top'>
-              <div className='rce-citem-body--top-title'>{props.title} {props.case_type}</div>
+              <div className='rce-citem-body--top-title'>{props.title}</div>
               <div className='rce-citem-body--top-time'>{date && (props.dateString || format(date))}</div>
             </div>
 
