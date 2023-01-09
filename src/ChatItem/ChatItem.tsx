@@ -68,6 +68,9 @@ const ChatItem: React.FC<IChatItemProps> = ({
       onClick={handleOnClick}
       onContextMenu={props.onContextMenu}
     >
+      <div className={'rce-citem-cs-number'}>
+          Case: {props.case_number} · {props.isMember === '1' && <span>{'Member · '}{props.memberCateg}{' · '}{props.country}</span>}
+      </div>
       <div className={props.selected ? 'rce-citem-active':'rce-citem'} onDragOver={onDragOver} onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDrop={onDrop}>
         {!!props.onDragComponent && onDrag && props.onDragComponent(props.id)}
         {((onDrag && !props.onDragComponent) || !onDrag) && [
