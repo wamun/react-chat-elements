@@ -144,6 +144,18 @@
   color: #fff
 }
 
+.rce-citem-low-col-tac {
+  background: inherit;
+  border: 1px solid green;  
+  color: green;
+}
+
+.rce-citem-low-col-lck {
+  background: inherit;
+  border: 1px solid red;  
+  color: red;
+}
+
 .rce-citem-low-col-action-debyoo {
   background: red;
   color: #fff
