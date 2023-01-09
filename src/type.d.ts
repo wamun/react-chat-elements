@@ -4,6 +4,12 @@ import React from 'react'
  * IChatItemProps Interface
  * @prop id The Chat Item's id and required.
  * @prop avatar The Chat Item's avatar and required.
+ * @prop case_number The Chat Item's case_type and optional.
+ * @prop isMember The Chat Item's isMember and optional.
+ * @prop memberCateg The Chat Item's memberCateg and optional.
+ * @prop country The Chat Item's country and optional.
+ * @prop incharge The Chat Item's incharge and optional.
+ * @prop inchargelocked The Chat Item's inchargelocked and optional.
  * @prop case_type The Chat Item's case_type and optional.
  * @prop category The Chat Item's category and optional.
  * @prop severity The Chat Item's severity and optional.
@@ -38,6 +44,12 @@ import React from 'react'
 export interface IChatItemProps {
   id: string | number
   avatar: string
+  case_number?: string
+  isMember?: string
+  memberCateg?: string
+  country?: string
+  incharge?: boolean
+  inchargelocked?: boolean
   case_type?: string
   category?: string
   severity?: string
