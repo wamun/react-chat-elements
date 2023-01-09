@@ -64,6 +64,15 @@
   justify-content: center;
 }
 
+.rce-smsg-time {
+  background: inherit; 
+  margin-top: 3px;
+  text-align: center;
+  color: #555;
+  font-size: 12px;  
+  width: 100%;
+}
+
 .rce-smsg-text {
   text-align: center;
   display: inline-block;
