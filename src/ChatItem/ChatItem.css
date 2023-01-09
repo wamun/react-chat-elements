@@ -65,9 +65,11 @@
 .rce-citem-cs-number {
   background: inherit;  
   padding-top: 4px;
-  padding-bottom: 4px;
-  height: 24px;
+  padding-bottom: 2px;
+  height: 16px;
   color: #111;
+  font-size: 13px;
+  margin-left: 15px;
 }
 
 .rce-citem-low {
