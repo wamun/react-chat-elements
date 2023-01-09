@@ -67,6 +67,7 @@
 .rce-smsg-time {
   background: inherit; 
   margin-top: 3px;
+  margin-bottom: 3px;
   text-align: center;
   color: #555;
   font-size: 12px;  
