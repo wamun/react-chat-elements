@@ -150,7 +150,7 @@ const ChatItem: React.FC<IChatItemProps> = ({
           {(props.status === 'User' || props.status === 'user_action_waited') && <div className={`rce-citem-low-col rce-citem-low-col-action-user`}>{props.status}</div>}
           
           {props.incharge === true && <div className={`rce-citem-low-col rce-citem-low-col-tac`}>{'TAC'}</div>}
-          {props.inchargelocked === true && <div className={`rce-citem-low-col rce-citem-low-col-tac`}>{'LCK'}</div>}
+          {props.inchargelocked === true && <div className={`rce-citem-low-col rce-citem-low-col-lck`}>{'LCK'}</div>}
       </div>
     </div>
   )
