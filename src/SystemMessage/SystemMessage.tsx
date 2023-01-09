@@ -1,4 +1,5 @@
 import React from 'react'
+import { format } from 'timeago.js'
 import './SystemMessage.css'
 
 import classNames from 'classnames'
@@ -30,6 +31,7 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
         </div>
        }
        <div className='rce-smsg-time'>
+           {format(props.date)}
        </div>
     </div>
   )
