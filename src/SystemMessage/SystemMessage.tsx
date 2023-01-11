@@ -55,6 +55,10 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
                   
             {rating < 1 && <div className='rce-smsg-text mrgtop-5'>{`-`}</div>}
             {rating > 0 && <div className='rce-smsg-text mrgtop-5'>{rating}</div>}
+                  
+            <div className='rce-smsg-time'>
+              {format(props.date)}
+            </div>
         </div>    
       }
       {props.text.indexOf('closed') < 0 && props.text.indexOf('clôturé') < 0 &&
