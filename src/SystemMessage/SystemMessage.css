@@ -79,3 +79,27 @@
   display: inline-block;
   font-size: 15px;
 }
+
+.rce-smsg-text-green {
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+.rce-smsg-text-red {
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+
+.mrgtop-10 {
+  margin-top: 10px;   
+}
+
+.mrgtop-5 {
+  margin-top: 5px;
+}
