@@ -23,14 +23,10 @@ const MessageList: FC<IMessageListProps> = ({
     if (!e || !e.current) return
 
     if (toBottomHeight === '100%' || (toBottomHeight && scrollBottom < toBottomHeight)) {
-      console.log('>> 1. e.current.scrollHeight : ' + e.current.scrollHeight)
       e.current.scrollTop = e.current.scrollHeight // scroll to bottom
     } else {
-      console.log('>> 2. e.current.scrollHeight : ' + e.current.scrollHeight)
       if (lockable === true) {
         e.current.scrollTop = e.current.scrollHeight - e.current.offsetHeight - scrollBottom
-         let tt = e.current.scrollHeight - e.current.offsetHeight - scrollBottom
-         console.log('>> 3. e.current.scrollHeight - tt: ' + tt);
       }
     }
   }
@@ -39,7 +35,6 @@ const MessageList: FC<IMessageListProps> = ({
     if (!referance) return
 
     if (prevProps.current.dataSource.length !== props.dataSource.length) {
-      console.log('>> 4. getBottom(referance) : ' + getBottom(referance)); 
       setScrollBottom(getBottom(referance))
       checkScroll()
     }
