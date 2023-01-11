@@ -7,7 +7,7 @@ import { ISystemMessageProps } from '../type'
 
 const SystemMessage: React.FC<ISystemMessageProps> = props => {
   let name, title, fbanswer, rating;
-  if (props.text.indexOf('case_closure_notes') > -1)
+  if (props.text.indexOf('closurenotes') > -1)
   {
       let s = JSON.parse(props.text);
       name = s.name;
@@ -41,7 +41,7 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
          </div>
         </div>    
       }
-      {props.text.indexOf('case_closure_notes') > -1 &&
+      {props.text.indexOf('closurenotes') > -1 &&
         <div className='rce-smsg'>
             <div className='rce-smsg-text'>{title}</div>
             
@@ -63,7 +63,7 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
       }
       {props.text.indexOf('closed') < 0 && props.text.indexOf('clôturé') < 0 &&
        props.text.indexOf('opened') < 0 && props.text.indexOf('ouvert') < 0 &&
-       props.text.indexOf('connect') < 0 && props.text.indexOf('case_closure_notes') < 0 &&
+       props.text.indexOf('connect') < 0 && props.text.indexOf('closurenotes') < 0 &&
         <div className='rce-smsg'>
          <div className='rce-smsg-text'>{props.text}</div>
          <div className='rce-smsg-time'>
