@@ -7,8 +7,6 @@ import { ISystemMessageProps } from '../type'
 
 const SystemMessage: React.FC<ISystemMessageProps> = props => {
   let name, title, fbanswer, rating;
-    console.log('>>> 1. closurenotes');
-   console.log('>>> 2. closurenotes props.text.indexOf :: ' + props.text.indexOf('closurenotes'));
   if (props.text.indexOf('closurenotes') > -1)
   {
       let s = JSON.parse(props.text);
@@ -16,8 +14,6 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
       title = `${name} sent Closure Notes`;
       fbanswer = s.fbanswer;
       rating = s.rating;
-      
-      console.log('>>> 3. rating :: ' + rating);
   }
   return (
     <div className={classNames('rce-container-smsg', props.className)}>
