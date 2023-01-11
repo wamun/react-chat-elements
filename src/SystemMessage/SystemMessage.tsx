@@ -53,8 +53,10 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
                   
             <div className='rce-smsg-text mrgtop-10'>{`Rate this correspondence from 1 to 5 stars:`}</div>
                   
-            {rating < 1 && <div className='rce-smsg-text mrgtop-5'>{`-`}</div>}
-            {rating > 0 && <div className='rce-smsg-text-blue mrgtop-5'>{rating}</div>}
+            <div className='rce-smsg-text-h20'>
+             {!rating && <div className='rce-smsg-text mrgtop-5'>{`-`}</div>}
+             {rating && <div className='rce-smsg-text-blue mrgtop-5'>{rating}</div>}
+             </div>
                   
             <div className='rce-smsg-time mrgtop-5'>
               {format(props.date)}
