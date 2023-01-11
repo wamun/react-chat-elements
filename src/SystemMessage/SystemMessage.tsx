@@ -11,7 +11,7 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
    console.log('>>> 2. closurenotes props.text.indexOf :: ' + props.text.indexOf('closurenotes'));
   if (props.text.indexOf('closurenotes') > -1)
   {
-      let s = props.text;
+      let s = JSON.parse(props.text);
       name = s.name;
       title = `${name} sent Closure Notes`;
       fbanswer = s.fbanswer;
