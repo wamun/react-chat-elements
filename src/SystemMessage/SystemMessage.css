@@ -96,6 +96,18 @@
   color: red;
 }
 
+.rce-smsg-text-blue {
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0b47ca;
+}
+
+.mrgtop-20 {
+  margin-top: 20px;   
+}
+
 .mrgtop-10 {
   margin-top: 10px;   
 }
