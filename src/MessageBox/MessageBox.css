@@ -129,6 +129,41 @@
   padding: 6px 9px 8px 9px;
   float: left;
   min-width: 140px;
+  max-width: 500px;
+}
+
+.rce-mbox-left {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0px;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-top: 3px;
+  flex-direction: column;
+  margin-bottom: 3px;
+  padding: 6px 9px 8px 9px;
+  float: left;
+  min-width: 140px;
+  max-width: 500px;
+}
+
+.rce-mbox-right {
+  position: relative;
+  background: #d8ffcb;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0px;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-top: 3px;
+  flex-direction: column;
+  margin-bottom: 3px;
+  padding: 6px 9px 8px 9px;
+  float: left;
+  min-width: 140px;
+  max-width: 500px;
 }
 
 .rce-mbox.message-focus {
@@ -255,7 +290,7 @@
   top: 0px;
   width: 15px;
   height: 15px;
-  fill: white;
+  fill: #d8ffcb;
   filter: drop-shadow(2px 0px 1px rgba(0, 0, 0, 0.2));
 }
 
