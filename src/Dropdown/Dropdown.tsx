@@ -13,7 +13,7 @@ const Dropdown: React.FC<IDropdownProps> = ({ animationPosition = 'nortwest', an
 
   return (
     <div className={classNames('rce-dropdown-container', props.className)} onBlur={onBlur}>
-      {<Button {...props.buttonProps} onClick={() => setShow(!show)} />}
+      {<Button {...props.buttonProps} isDropdown={true} onClick={() => setShow(!show)} />}
       <div
         className={classNames(
           'rce-dropdown',
