@@ -889,6 +889,7 @@ export interface ICircleProps {
  * IButtonProps Interface
  * @prop title The Button's title and optional.
  * @prop text The Button's text and optional.
+ * @prop isDropdown The Button's isDropdown and optional.
  * @prop buttonRef The Button's ref and optional.
  * @prop type The Button's type and optional.
  * @prop className The Button's className and optional.
@@ -907,6 +908,7 @@ export interface IButtonProps {
   backgroundColor?: string
   color?: string
   disabled?: boolean
+  isDropdown?: boolean
   onClick?: React.MouseEventHandler
   icon?: IButtonIcon
 }
