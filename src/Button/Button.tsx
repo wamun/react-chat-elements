@@ -27,7 +27,7 @@ const Button: React.FC<IButtonProps> = ({ disabled = false, backgroundColor = '#
           {props.icon.float === 'left' && <span>{props.text}</span>}
         </span>
       ) : (
-        <span>{props.text}</span>
+        <span>{props.text}{props.isDropdown !== undefined && props.isDropdown !== null && props.isDropdown === true && <span> &#9660;</span>}</span>
       )}
     </button>
   )
