@@ -15,6 +15,14 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
       fbanswer = s.fbanswer;
       rating = s.rating;
   }
+  else if (props.text.indexOf('feedback') > -1)
+  {
+      let s = JSON.parse(props.text);
+      name = s.name;
+      title = `${name} marked this cased as resolved`;
+      fbanswer = s.fbanswer;
+      rating = s.rating;
+  }
   return (
     <div className={classNames('rce-container-smsg', props.className)}>
       {(props.text.indexOf('closed') > -1 || props.text.indexOf('clôturé') > -1) &&
@@ -41,7 +49,7 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
          </div>
         </div>    
       }
-      {props.text.indexOf('closurenotes') > -1 &&
+      {(props.text.indexOf('closurenotes') > -1 || props.text.indexOf('feedback') > -1) &&
         <div className='rce-smsg'>
             <div className='rce-smsg-text'>{title}</div>
             
@@ -66,6 +74,7 @@ const SystemMessage: React.FC<ISystemMessageProps> = props => {
       {props.text.indexOf('closed') < 0 && props.text.indexOf('clôturé') < 0 &&
        props.text.indexOf('opened') < 0 && props.text.indexOf('ouvert') < 0 &&
        props.text.indexOf('connect') < 0 && props.text.indexOf('closurenotes') < 0 &&
+       props.text.indexOf('feedback') < 0 &&
         <div className='rce-smsg'>
          <div className='rce-smsg-text'>{props.text}</div>
          <div className='rce-smsg-time'>
